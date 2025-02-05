@@ -18,8 +18,8 @@ p {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(110px, 2fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 10px;
   justify-content: center;
   background: white;
   margin-bottom: 7px;
@@ -144,7 +144,7 @@ p {
   }
 } */
 
-@media (max-width: 1441px) {
+/* @media (max-width: 1441px) {
   .container {
     text-align: center;
     padding: 0 60px;
@@ -174,4 +174,4 @@ p {
     grid-template-columns: repeat(auto-fit, minmax(140px, 4fr));
     gap: 20px;
   }
-}
+} */
