@@ -1,0 +1,84 @@
+.navbar {
+  display: flex;
+  color: black;
+  width: 100vw;
+  height: 8vh;
+  font-size: 10px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
+  color: white;
+  z-index: 22;
+}
+.left {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+.mid {
+  height: 100%;
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+.mid ul {
+  display: flex;
+  gap: 5px;
+  width: 70%;
+  justify-content: space-around;
+  background: transparent;
+}
+
+.mid ul li {
+  list-style: none;
+  background: transparent;
+}
+
+.right {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+}
+
+.right button {
+  font-size: 7px;
+  width: 60%;
+  height: 55%;
+  border-radius: 10px;
+  border: 1px solid rgb(105, 105, 182);
+  background: rgb(170, 199, 240);
+}
+
+.right .icon {
+  background: transparent;
+  color: rgb(17, 16, 16);
+}
+
+@media (min-width: 1080px) {
+  .navbar {
+    width: 100vw;
+    height: 8vh;
+    font-size: 15px;
+  }
+  .right {
+    gap: 19px;
+  }
+  .right button {
+    font-size: 10px;
+    width: 30%;
+    height: 60%;
+    border-radius: 10px;
+    border: 1px solid rgb(105, 105, 182);
+    background: rgb(170, 199, 240);
+  }
+}

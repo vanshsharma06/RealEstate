@@ -1,0 +1,7 @@
+.box {
+  width: 100vw;
+  height: 65vh;
+  background: url("E:\projects\react practice\Real Estate(react+vite)\myApp\src\assets\brian-babb-XbwHrt87mQ0-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
