@@ -1,6 +1,6 @@
 .container {
   text-align: center;
-  padding: 10px;
+  padding: 30px;
   background: white;
 }
 
@@ -18,8 +18,8 @@ p {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(122px, 1fr));
+  gap: 15px;
   justify-content: center;
   background: white;
   margin-bottom: 7px;
