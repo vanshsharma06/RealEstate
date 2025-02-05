@@ -2,8 +2,8 @@
   display: flex;
   color: black;
   width: 100vw;
-  height: 8vh;
-  font-size: 10px;
+  height: 6vh;
+  font-size: 12px;
   position: absolute;
   background: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
   color: white;
@@ -29,8 +29,8 @@
 
 .mid ul {
   display: flex;
-  gap: 5px;
-  width: 70%;
+  gap: 11px;
+  width: 80%;
   justify-content: space-around;
   background: transparent;
 }
@@ -51,9 +51,9 @@
 }
 
 .right button {
-  font-size: 7px;
+  font-size: 8px;
   width: 60%;
-  height: 55%;
+  height: 45%;
   border-radius: 10px;
   border: 1px solid rgb(105, 105, 182);
   background: rgb(170, 199, 240);
@@ -64,7 +64,7 @@
   color: rgb(17, 16, 16);
 }
 
-@media (min-width: 1080px) {
+/* @media (min-width: 1080px) {
   .navbar {
     width: 100vw;
     height: 8vh;
@@ -81,4 +81,4 @@
     border: 1px solid rgb(105, 105, 182);
     background: rgb(170, 199, 240);
   }
-}
+} */
