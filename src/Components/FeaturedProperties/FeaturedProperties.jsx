@@ -15,7 +15,7 @@ const properties = [
     beds: 4,
     baths: 1,
     size: 400,
-    image: {photo2},
+    image: '../../assets/photo2.jpg',
     status: ["For Sale", "Featured"],
   },
   {
@@ -27,7 +27,7 @@ const properties = [
     beds: 4,
     baths: 2,
     size: 450,
-    image: {photo2},
+    image: '../../assets/photo2.jpg',
     status: ["For Sale"],
   },
   {
@@ -39,7 +39,7 @@ const properties = [
     beds: 4,
     baths: 2,
     size: 450,
-    image: {photo2},
+    image: '../../assets/photo2.jpg',
     status: ["For Sale"],
   },
   {
@@ -51,7 +51,7 @@ const properties = [
     beds: 4,
     baths: 1,
     size: 400,
-    image: {photo3},
+    image: '../../assets/photo3.jpg',
     status: ["For Sale", "Featured"],
   },
 ];
