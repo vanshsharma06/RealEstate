@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 // import styles from "./FeaturedProperties.module.css";
 import styles from "./AllProperties.module.css";
 import { FaBed, FaBath, FaRulerCombined, FaMapMarkerAlt } from "react-icons/fa";
+import photo2 from "../../assets/photo2.jpg";
+// import photo3 from '../../assets/photo3.jpg'
 
 const properties = [
   {
@@ -14,7 +16,7 @@ const properties = [
     beds: 4,
     baths: 1,
     size: 400,
-    image: "src/assets/etienne-beauregard-riverin-B0aCvAVSX8E-unsplash.jpg",
+    image: photo2,
     status: ["For Sale", "Featured"],
   },
   {
@@ -26,7 +28,7 @@ const properties = [
     beds: 4,
     baths: 2,
     size: 450,
-    image: "src/assets/etienne-beauregard-riverin-B0aCvAVSX8E-unsplash.jpg",
+    image: photo2,
     status: ["For Sale"],
   },
   {
@@ -38,7 +40,7 @@ const properties = [
     beds: 4,
     baths: 2,
     size: 400,
-    image: "src/assets/etienne-beauregard-riverin-B0aCvAVSX8E-unsplash.jpg",
+    image: photo2,
     status: ["For Rent"],
   },
   {
@@ -50,7 +52,7 @@ const properties = [
     beds: 4,
     baths: 2,
     size: 450,
-    image: "src/assets/etienne-beauregard-riverin-B0aCvAVSX8E-unsplash.jpg",
+    image: photo2,
     status: ["For Sale", "Featured"],
   },
   {
@@ -62,7 +64,7 @@ const properties = [
     beds: 4,
     baths: 2,
     size: 450,
-    image: "src/assets/etienne-beauregard-riverin-B0aCvAVSX8E-unsplash.jpg",
+    image: photo2,
     status: ["For Rent", "Featured"],
   },
   {
@@ -74,7 +76,7 @@ const properties = [
     beds: 4,
     baths: 2,
     size: 450,
-    image: "src/assets/etienne-beauregard-riverin-B0aCvAVSX8E-unsplash.jpg",
+    image: photo2,
     status: ["For Sale", "Featured"],
   },
   {
@@ -86,7 +88,7 @@ const properties = [
     beds: 4,
     baths: 2,
     size: 450,
-    image: "src/assets/etienne-beauregard-riverin-B0aCvAVSX8E-unsplash.jpg",
+    image: photo2,
     status: ["For Sale", "Featured"],
   },
   {
@@ -98,7 +100,7 @@ const properties = [
     beds: 4,
     baths: 2,
     size: 450,
-    image: "src/assets/etienne-beauregard-riverin-B0aCvAVSX8E-unsplash.jpg",
+    image: photo2,
     status: ["For Rent", "Featured"],
   },
 ];
