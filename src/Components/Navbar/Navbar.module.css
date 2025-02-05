@@ -1,84 +1,151 @@
+/* Navbar */
 .navbar {
   display: flex;
-  color: black;
-  width: 100vw;
-  height: 6vh;
-  font-size: 12px;
-  position: absolute;
-  background: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
-  color: white;
-  z-index: 22;
-}
-.left {
-  height: 100%;
-  width: 20%;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  background: transparent;
+  justify-content: space-between;
+  /* color: white; */
+  /* position: absolute; */
+  width: 100vw;
+  height: 7vh;
+  padding: 0 15px;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
+/* Left Section: Hamburger + Logo */
+.leftSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  font-size: 17px;
+  cursor: pointer;
+  /* color: white; */
+  transition: color 0.3s;
+  display: flex;
+}
+
+.hamburger:hover {
+  color: #ffcc00; /* Yellow effect on hover */
+}
+
+/* Logo */
+.logo {
+  font-size: 17px;
+  font-weight: bold;
+  /* color: #fff; */
+  letter-spacing: 1px;
+}
+
+/* Middle (Normal Navbar) */
 .mid {
-  height: 100%;
-  width: 55%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  background: transparent;
 }
 
 .mid ul {
   display: flex;
-  gap: 11px;
-  width: 94%;
-  justify-content: space-around;
-  background: transparent;
+  gap: 20px;
 }
 
 .mid ul li {
   list-style: none;
-  background: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
+.mid ul li:hover {
+  color: #ffcc00;
+}
+
+/* Right Section */
 .right {
-  height: 100%;
-  width: 25%;
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 8px;
-  background: transparent;
+  gap: 12px;
 }
 
 .right button {
-  font-size: 8px;
-  width: 60%;
-  height: 45%;
-  border-radius: 10px;
-  border: 1px solid rgb(105, 105, 182);
-  background: rgb(170, 199, 240);
+  font-size: 11px;
+  padding: 4px 3px;
+  border-radius: 5px;
+  border: 1px solid rgb(131, 131, 255);
+  background: skyblue;
+  /* color: white; */
+  transition: all 0.3s;
+}
+
+.right button:hover {
+  background: rgb(97, 196, 235);
+  color: black;
 }
 
 .right .icon {
-  background: transparent;
-  color: rgb(17, 16, 16);
+  /* color: white; */
+  font-size: 15px;
 }
 
-/* @media (min-width: 1080px) {
-  .navbar {
-    width: 100vw;
-    height: 8vh;
-    font-size: 15px;
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Hide sidebar initially */
+  width: 100px;
+  height: 100vh;
+  background: #ded9d9;
+  /* color: white; */
+  padding-top: 20px;
+  transition: left 0.3s ease-in-out;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 13px;
+  background: #ded9d9;
+  position: relative; /* Important for pseudo-elements */
+}
+
+.sidebar ul li:hover {
+  background: #ffcc00;
+  color: black;
+}
+
+/* Custom Line Between List Items */
+.sidebar ul li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 15%; /* Adjust left position */
+  width: 70%; /* Line width (adjust as needed) */
+  height: 1px;
+  background-color: gray;
+  opacity: 0.6; /* Slight fade effect */
+}
+
+/* Show Sidebar */
+.sidebar.show {
+  left: 0;
+}
+
+/* Responsive: Show Hamburger on Small Screens */
+@media (max-width: 768px) {
+  .mid {
+    display: none;
   }
-  .right {
-    gap: 19px;
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
   }
-  .right button {
-    font-size: 10px;
-    width: 30%;
-    height: 60%;
-    border-radius: 10px;
-    border: 1px solid rgb(105, 105, 182);
-    background: rgb(170, 199, 240);
-  }
-} */
+}
