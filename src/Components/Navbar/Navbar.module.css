@@ -138,13 +138,13 @@
 }
 
 /* Responsive: Show Hamburger on Small Screens */
-@media (max-width: 700px) {
+@media (max-width: 650px) {
   .mid {
     display: none;
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 650px) {
   .hamburger {
     display: none;
   }
