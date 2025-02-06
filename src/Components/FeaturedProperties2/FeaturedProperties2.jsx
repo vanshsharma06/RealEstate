@@ -121,6 +121,24 @@ const properties = [
     img: photo2,
     tags: ["For Rent"],
   },
+  {
+    id: 14,
+    type: "Apartment",
+    title: "New Apartment Nice View",
+    price: "$850/month",
+    location: "42 Avenue Q, Brooklyn",
+    img: photo2,
+    tags: ["For Rent", "Featured"],
+  },
+  {
+    id: 15,
+    type: "Apartment",
+    title: "New Apartment Nice View",
+    price: "$850/month",
+    location: "42 Avenue Q, Brooklyn",
+    img: photo2,
+    tags: ["For Rent", "Featured"],
+  },
 ];
 
 export default function FeaturedProperties2() {
