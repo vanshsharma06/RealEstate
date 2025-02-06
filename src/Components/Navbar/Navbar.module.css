@@ -104,6 +104,7 @@
   /* color: white; */
   padding-top: 70px;
   transition: left 0.3s ease-in-out;
+  z-index: 10;
 }
 
 .sidebar ul li {
@@ -113,6 +114,10 @@
   font-size: 13px;
   background: #ded9d9;
   position: relative; /* Important for pseudo-elements */
+}
+
+ul{
+  padding: 0px;
 }
 
 .sidebar ul li:hover {
