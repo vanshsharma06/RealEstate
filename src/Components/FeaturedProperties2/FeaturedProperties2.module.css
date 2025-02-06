@@ -7,7 +7,7 @@
 }
 
 .title {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -20,7 +20,7 @@
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin: 20px;
+  margin-bottom: 20px;
 }
 
 .filterButton {
@@ -31,10 +31,9 @@
   border-radius: 25px;
   font-weight: bold;
   transition: all 0.3s ease-in-out;
-  font-size: 0.7rem;
+  font-size: 1rem;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   outline: none;
-  /* width: 30%; */
 }
 
 .filterButton:hover {
@@ -46,14 +45,15 @@
   color: white;
   transform: scale(1.1);
   padding: 14px 30px;
-  font-size: 0.8rem;
+  font-size: 1.05rem;
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+  justify-content: center;
 }
 
 .card {
@@ -61,56 +61,45 @@
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 10px;
 }
 
 .cardImg {
   width: 100%;
-  height: 150px;
+  height: 200px;
   object-fit: cover;
 }
 
 .cardContent {
-  padding: 12px 0px;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
+  padding: 15px;
 }
 
 .cardTitle {
-  font-size: 11px;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
 .cardLocation {
   color: #666;
-  font-size: 10px;
+  font-size: 0.9rem;
   margin: 5px 0;
-  background: transparent;
 }
 
 .cardPrice {
-  font-size: 10px;
+  font-size: 1.1rem;
   font-weight: bold;
-  background: transparent;
-  margin-top: 7px;
-  width: 50%;
-  display: flex;
-  justify-content: center;
 }
 
 .tags {
   display: flex;
-  /* gap: 5px; */
-  margin-bottom: 5px;
+  gap: 5px;
+  margin-bottom: 10px;
 }
 
 .tag {
   padding: 5px 10px;
-  font-size: 7px;
-  border-radius: 8px;
+  font-size: 0.8rem;
+  border-radius: 5px;
   font-weight: bold;
-  margin-left: 5px;
 }
 
 .sale {
@@ -121,4 +110,21 @@
 .featured {
   background-color: #ffc107;
   color: black;
+}
+
+.seeMoreButton {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+}
+
+.seeMoreButton:hover {
+  background-color: #333;
 }

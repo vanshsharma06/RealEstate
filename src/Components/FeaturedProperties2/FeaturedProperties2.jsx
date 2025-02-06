@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./FeaturedProperties2.module.css";
 import photo2 from "../../assets/photo2.jpg";
-import photo3 from "../../assets/photo3.jpg";
+// import photo3 from "../../assets/photo3.jpg";
 
 const properties = [
   {
@@ -62,7 +62,7 @@ const properties = [
     id: 7,
     type: "Villa",
     title: "Diamond Manor Apartment",
-    price: "$259,0000",
+    price: "$259,000",
     location: "7802 20th Ave, Brooklyn",
     img: photo2,
     tags: ["For Sale", "Featured"],
@@ -71,7 +71,7 @@ const properties = [
     id: 8,
     type: "Villa",
     title: "Diamond Manor Apartment",
-    price: "$259,0000",
+    price: "$259,000",
     location: "7802 20th Ave, Brooklyn",
     img: photo2,
     tags: ["For Sale", "Featured"],
@@ -79,38 +79,61 @@ const properties = [
   {
     id: 9,
     type: "Office",
-    title: "Diamond Manor Apartment",
-    price: "$259,0000",
-    location: "7802 20th Ave, Brooklyn",
+    title: "North Dillard Street",
+    price: "$250/month",
+    location: "4330 Bell Shoals Rd",
     img: photo2,
-    tags: ["For Sale", "Featured"],
+    tags: ["For Rent"],
   },
   {
     id: 10,
     type: "Office",
-    title: "Diamond Manor Apartment",
-    price: "$259,0000",
-    location: "7802 20th Ave, Brooklyn",
+    title: "North Dillard Street",
+    price: "$250/month",
+    location: "4330 Bell Shoals Rd",
     img: photo2,
-    tags: ["For Sale", "Featured"],
+    tags: ["For Rent"],
   },
   {
     id: 11,
     type: "Office",
-    title: "Diamond Manor Apartment",
-    price: "$259,0000",
-    location: "7802 20th Ave, Brooklyn",
+    title: "North Dillard Street",
+    price: "$250/month",
+    location: "4330 Bell Shoals Rd",
     img: photo2,
-    tags: ["For Sale", "Featured"],
+    tags: ["For Rent"],
+  },
+  {
+    id: 12,
+    type: "Office",
+    title: "North Dillard Street",
+    price: "$250/month",
+    location: "4330 Bell Shoals Rd",
+    img: photo2,
+    tags: ["For Rent"],
+  },
+  {
+    id: 13,
+    type: "Office",
+    title: "North Dillard Street",
+    price: "$250/month",
+    location: "4330 Bell Shoals Rd",
+    img: photo2,
+    tags: ["For Rent"],
   },
 ];
 
 export default function FeaturedProperties2() {
   const [filter, setFilter] = useState("All");
+  const [showAll, setShowAll] = useState(false);
 
   const filteredProperties = properties.filter(
     (property) => filter === "All" || property.type === filter
   );
+
+  const visibleProperties = showAll
+    ? filteredProperties
+    : filteredProperties.slice(0, 4);
 
   return (
     <div className={styles.container}>
@@ -134,7 +157,7 @@ export default function FeaturedProperties2() {
       </div>
 
       <div className={styles.grid}>
-        {filteredProperties.map((property) => (
+        {visibleProperties.map((property) => (
           <div key={property.id} className={styles.card}>
             <img
               src={property.img}
@@ -161,6 +184,13 @@ export default function FeaturedProperties2() {
           </div>
         ))}
       </div>
+
+      <button
+        className={styles.seeMoreButton}
+        onClick={() => setShowAll(!showAll)}
+      >
+        {showAll ? "See Less" : "See More"}
+      </button>
     </div>
   );
 }
