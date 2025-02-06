@@ -34,7 +34,7 @@
   font-size: 0.7rem;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   outline: none;
-  width: 30%;
+  /* width: 30%; */
 }
 
 .filterButton:hover {
@@ -74,43 +74,43 @@
   padding: 12px 0px;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 2px;
 }
 
 .cardTitle {
-  font-size: 1rem;
+  font-size: 11px;
   font-weight: bold;
 }
 
 .cardLocation {
   color: #666;
-  font-size: 0.9rem;
+  font-size: 10px;
   margin: 5px 0;
   background: transparent;
 }
 
 .cardPrice {
-  font-size: 1rem;
+  font-size: 10px;
   font-weight: bold;
   background: transparent;
   margin-top: 7px;
   width: 50%;
   display: flex;
   justify-content: center;
-
 }
 
 .tags {
   display: flex;
-  gap: 5px;
-  margin-bottom: 15px;
+  /* gap: 5px; */
+  margin-bottom: 5px;
 }
 
 .tag {
   padding: 5px 10px;
-  font-size: 0.8rem;
-  border-radius: 5px;
+  font-size: 7px;
+  border-radius: 8px;
   font-weight: bold;
+  margin-left: 5px;
 }
 
 .sale {
