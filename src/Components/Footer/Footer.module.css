@@ -1,9 +1,9 @@
 .footer {
-  background-color: #232F3E;
+  background-color: #232f3e;
   color: white;
   padding: 2rem 1rem;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   width: 100%;
 }
 
@@ -15,8 +15,8 @@
   margin: 0 auto;
   background: transparent;
 }
-p{
-    background: transparent;
+p {
+  background: transparent;
 }
 .section {
   text-align: center;
@@ -35,7 +35,6 @@ p{
 .text {
   color: white;
   font-size: 0.6rem;
-  
 }
 
 .list {
@@ -43,8 +42,8 @@ p{
   padding: 0;
   background: transparent;
 }
-ul li{
-    background: transparent;
+ul li {
+  background: transparent;
 }
 
 .link {
@@ -100,7 +99,7 @@ ul li{
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1200px) {
   .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

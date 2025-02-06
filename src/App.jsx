@@ -1,6 +1,4 @@
 import Navbar from "./Components/Navbar/Navbar";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min";
 import Container from "./Components/Container/Container";
 import WhyUs from "./Components/WhyUS/WhyUS";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";

@@ -104,7 +104,7 @@
   /* color: white; */
   padding-top: 70px;
   transition: left 0.3s ease-in-out;
-  z-index: 10;
+  z-index: 100;
 }
 
 .sidebar ul li {
@@ -116,7 +116,7 @@
   position: relative; /* Important for pseudo-elements */
 }
 
-ul{
+ul {
   padding: 0px;
 }
 
